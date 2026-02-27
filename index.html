@@ -37,10 +37,11 @@
         
      <section class="bg-light  pt-5">
         <div class="container">
-          <div class="row align-items-center ">         
+          <!-- 1) endnu et eksempel på responsivt. Når skærmen er over md er den på row, ellers er den column -->
+          <div class="row align-items-center flex-column-reverse flex-md-row">         
             
-                <div class="col-md-6 text-md-start text-dark">
-                  
+                <div class="col-md-6 text-center text-lg-start text-dark">
+                  <!-- col-md-6 justify-content-center d-flex flex-column text-center text-md-start text-dark -->
                                 <h1 style="font-weight: 800; padding-bottom:0px; margin-bottom: 0px; font-size: 40px;">Sofie</h1>
                                 <p>Under uddannelse som webudvikler</p>
                                 <button class="btn btn-primary mb-4">Se projekter</button>
@@ -63,49 +64,40 @@
                               <h2>test</h2>
                             </div>
                         </div>
-              <!-- *mine kort  -->
-               <div class="row g-2 align-items-center justify-content-center">
-                  <div class="col-3 md-4">
-                      <div class="card  bg-light h-100">
-                          <img src="assets/img/byggefidusfirst.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                             <h5 class="card-title text-dark">Byggefidusen</h5>
-                             <p class="card-text text-dark">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           </div>
-                      </div>
-                  </div>
+              <!--1) RESPONSIVT IKKE LIGESOM I TAILWIND SOM BRUGER W-100 OG DIPLAY ET ELLER ANDET *mine kort  -->
+               <<div class="row g-4 align-items-stretch justify-content-center">
 
+  <div class="col-12 col-md-4 col-lg-3 d-flex h-100">
+    <div class="card bg-light h-100">
+      <img src="assets/img/byggefidusfirst.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Byggefidusen</h5>
+        <p class="card-text text-dark">This is a longer card with supporting text...</p>
+      </div>
+    </div>
+  </div>
 
-                  
-                  <div class="col-3 md-4 ">
-                      <div class="card  bg-light h-6">
-                         <img src="assets/img/caraccio1.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                             <h5 class="card-title text-dark">Carracio</h5>
-                             <p class="card-text text-dark">I dette projekt skulle vi lave en hjemmeside for den italienske kunster fransecesso Carraccio. 
-          Jeg har primært stået for udvinkling af hjemmesiden, men har undervejs også haft indlfydelse på ux'en og ui'en.
-          Jeg anvendte CMS-systemet Wordpress herunder plugins som elementor..</p>
-                                   <a href="http://caracciostudio.com/"> Gå til side</a>
+  <div class="col-12 col-md-4 col-lg-3 d-flex h-100">
+    <div class="card bg-light h-100 border-radius: 0px;">
+      <img src="assets/img/caraccio1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Carracio</h5>
+        <p class="card-text text-dark">I dette projekt skulle vi lave en hjemmeside...</p>
+      </div>
+    </div>
+  </div>
 
-                           
-                            </div> 
-                      </div>
-                  </div>
-                    <div class="col-3 md-4">
-                      <div class="card  bg-light h-6">
-                          <img src="assets/img/byggefidusfirst.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                             <h5 class="card-title text-dark">Byggefidusen</h5>
-                             <p class="card-text text-dark">This is a lon
-                              ger card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
-                            <a href="https://byggefidus.dk/elementor-page-263/"> Gå til side</a>
+  <div class="col-12 col-md-4 col-lg-3 d-flex h-100">
+    <div class="card bg-light h-100">
+      <img src="assets/img/byggefidusfirst.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-dark">Byggefidusen</h5>
+        <p class="card-text text-dark">This is a longer card with supporting text...</p>
+      </div>
+    </div>
+  </div>
 
-                            </div>
-                            
-                      </div>
-                  </div>
-               </div>
+</div>
   
 
                     </div>
@@ -115,6 +107,7 @@
 
 
      </section>
+     
   <!-- <div class="row w-100 bg-light container-fluid align-items-end bg-primary ">
     
     <div class="col-6  d-flex flex-column justify-content-end align-items-start  text-start ">
