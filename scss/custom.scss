@@ -1,5 +1,4 @@
 // custom.scss
-// Step 1: override Bootstrap variabler
 $primary: #38000E;
 $secondary: #6A0019;
 $light:#D9D9D9;
@@ -7,5 +6,4 @@ $light:#D9D9D9;
 $body-bg: #38000E;
 $body-color: #ffffff;
 $font-family-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif;
-// Step 2: importer Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
