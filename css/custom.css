@@ -11859,5 +11859,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.p {
+  font-size: 12px;
+}
+
+.nav-link {
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*# sourceMappingURL=custom.css.map */

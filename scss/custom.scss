@@ -6,4 +6,21 @@ $light:#D9D9D9;
 $body-bg: #38000E;
 $body-color: #ffffff;
 $font-family-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+.p {
+    font-size: 12px;
+}
+.nav-link {
+    text-decoration: none!important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
