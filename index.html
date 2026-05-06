@@ -7,33 +7,86 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/custom.css">
 
     <style>
-        /* Din styling bevares 100% */
-        .more-text {
-            display: none; /* VIGTIGT: Dette fjerner højden fra start */
-        }
-        
-        .card {
-            border-radius: 0px;
-            transition: all 0.3s ease; /* Gør udvidelsen blødere */
-        }
+      header{
+        z-index: 1;
+      }
+        /* section .lottie {
+  width: 100%;
+  height:100%;
+  background-color: red;
+  z-index: 0;
+  position: absolute;
+  top:-20;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+display: flex;
+justify-content: center;
+}
+.animation-lottie{
+  width: 150%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  
+
+} */
+ .section
+  { z-index: 0;
+  position: relative;
+  overflow: hidden; }
+ .section>div {
+  z-index: 1;
+  justify-content: center;
+}
+.animation-lottie {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 160%;
+  z-index: 0;
+  pointer-events: none;
+  top:-20%
+}
+#ommig{z-index: 0;
+  position: relative;
+  overflow: hidden;}
+  #ommig>div{
+     z-index: 1;
+  justify-content: center;
+  }
+.animation-lottie-2{
+   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 140%;
+  z-index: -1;
+  pointer-events: none;
+  top:-30%
+}
+
     </style>
 </head> 
 <body>
     <header class="bg-primary">
         <ul class="nav justify-content-end p-3 ">
-            <li class="nav-item"><a class="nav-link active text-light" href="#">Active</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="index.html#projekter">Projekter</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="index.html#ommig">om mig</a></li>
+             <li class="nav-item"><a class="nav-link active text-light" href="index.html#kontakt">Kontakt mig</a></li>
             <li class="nav-item"><a class="nav-link text-light" href="https://github.com/sofieroshni"><i class="bi bi-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link text-light" href="#ommig">om mig</a></li>
         </ul>
     </header>
 
     <main>
-        <section class="bg-light pt-5">
+        <section class="bg-light pt-5 hero  ">
+<!-- <iframe  class="test"src="https://lottie.host/embed/e2e6432e-25c6-4590-8484-a61aeda8f9d5/ePERhcIHOK.json"></iframe> -->
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/b93a756d-257d-451a-ae9c-44cb5e831901/23Vjh6sTP9.lottie"  speed="0.5" autoplay loop class="animation-lottie "></dotlottie-wc>
+          </div>
             <div class="container text-center">
                 <div class="row align-items-center flex-column-reverse flex-md-row">         
                     <div class="col-md-6 text-center text-lg-start text-dark">
@@ -88,6 +141,7 @@
 
                     <!-- Projekt 3 -->
                     <div class="col-12 col-md-4 col-lg-3">
+                        <a href="https://lemonade-app-vercel.vercel.app//">
                         <div class="card bg-light shadow-sm">
                             <img src="assets/img/lemonadeapp.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
@@ -96,8 +150,8 @@
                                     Udviklet som en teknisk øvelse i Redux state management...<span class="dots">...</span><span class="more-text"> Fokus lå på React-logik og state-håndtering.</span>
                                 </p>
                                 <button onclick="showMore(this)" class="btn btn-link p-0 text-start fw-bold mb-3" style="text-decoration: none;">Læs mere</button>
-                                <a href="https://lemonade-app-vercel.vercel.app//" class="btn btn-primary btn-sm w-100">Besøg side</a>
                             </div>
+                            </a>
                         </div>
                     </div>
 
@@ -109,6 +163,9 @@
         </section>
              
 <section id="ommig" class="py-5 bg-light py-5 animate__animated  animate__fadeIn animate__slow animate__delay-6s">
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/b93a756d-257d-451a-ae9c-44cb5e831901/23Vjh6sTP9.lottie"  speed="0.5" autoplay loop class="animation-lottie-2 "></dotlottie-wc>
+ 
     <div class="container">
         <div class="row align-items-center g-4">
             <div class="col-lg-5 text-center">
@@ -117,7 +174,7 @@
             </div>
 
             <div class="col-lg-7">
-                <h2 class="mb-3" style="font-weight: 800; color: #38000E;">Om Mig</h2>
+                    <div class="col text-start text-dark"><h2>Om Mig</h2></div>
                 
                 <p class="fs-5 text-dark mb-3" >
                     Jeg er <strong>Sofie Vedel</strong>, en passioneret webudvikler fra Roskilde. 
@@ -135,19 +192,22 @@
                 <div class="mb-4">
                     <h5 class="mb-3 text-dark">Mine fokusområder:</h5>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary fs-6 px-3 py-2">React & Next.js</span>
+                        <span class="badge bg-white text-dark fs-6 px-3 py-2">React & Next.js</span>
+                        <span class="badge bg-secondary fs-6 px-3 py-2">Lootie animation</span>
+
                         <span class="badge bg-secondary fs-6 px-3 py-2">WordPress</span>
                         <span class="badge bg-secondary fs-6 px-3 py-2">PHP & Laravel</span>
                         <span class="badge bg-secondary fs-6 px-3 py-2">UI/UX Design</span>
                         <span class="badge bg-secondary fs-6 px-3 py-2">SEO Optimering</span>
                     </div>
                 </div>
+             
 
                 <!-- Call to action -->
                 <div class="d-flex gap-3 flex-wrap">
-                    <a href="mailto:sofie.roshni@gmail.com" class="btn btn-primary btn-lg">
+                    <!-- <a href="mailto:sofie.roshni@gmail.com" class="btn btn-primary btn-lg">
                         <i class="bi bi-envelope"></i> Kontakt Mig
-                    </a>
+                    </a> -->
                     <a href="https://github.com/sofieroshni" class="btn btn-outline-primary btn-lg">
                         <i class="bi bi-github"></i> GitHub
                     </a>
@@ -172,29 +232,21 @@
         </div>
     </div>
 </section>
-        <section id="projekter" class="py-5 animate__animated animate__fadeIn animate__slow animate__delay-5s">
+       <section id="projekter" class="py-5 animate__animated animate__fadeIn animate__slow animate__delay-5s align-center">
 
-          <form>
-  <div class="form-group">
+<form class="col-12 d-flex flex-column align-items-center">
+  <div class="form-group col-4 text-start">
     <label for="exampleFormControlInput1">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  
-  <div class="form-group">
+  </div>  
+  <div class="form-group col-4 text-start">
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-</form>
+  <button class="btn btn-secondary mb-4 animate__animated animate__fadeInUp animate__slow animate__delay-3s">Se projekter</button>
+</form> 
+</div>
+         
 </section>
     </main>
 
