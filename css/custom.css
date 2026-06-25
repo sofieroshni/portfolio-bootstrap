@@ -11859,7 +11859,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.p {
+p {
   font-size: 12px;
 }
 
@@ -11875,6 +11875,31 @@ a {
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.card > img {
+  height: 100px;
+}
+
+.lottie {
+  width: 100px;
+  height: 100px;
+  background-color: red !important;
+}
+
+/* Din styling bevares 100% */
+.more-text {
+  display: none; /* VIGTIGT: Dette fjerner højden fra start */
+}
+
+.card {
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=custom.css.map */
